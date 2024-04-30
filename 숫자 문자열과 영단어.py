@@ -24,6 +24,8 @@ def solution(s):
                 answer += '8'
             elif word == "nine":
                 answer += str(9)
-            if word in ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]:
+            elif word == "zero":
+                answer += '0'
+            if word in ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "zero"]:
                 word = ""
     return int(answer)
